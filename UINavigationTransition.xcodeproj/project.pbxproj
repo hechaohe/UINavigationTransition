@@ -15,6 +15,10 @@
 		47FCF88E2085F97C00FCC23A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FCF88D2085F97C00FCC23A /* main.m */; };
 		47FCF8982085F97D00FCC23A /* UINavigationTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FCF8972085F97D00FCC23A /* UINavigationTransitionTests.m */; };
 		47FCF8A32085F97D00FCC23A /* UINavigationTransitionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FCF8A22085F97D00FCC23A /* UINavigationTransitionUITests.m */; };
+		47FCF8B52085F9D100FCC23A /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FCF8B32085F9D100FCC23A /* Animator.m */; };
+		47FCF8BB2085FA3500FCC23A /* HCNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FCF8BA2085FA3500FCC23A /* HCNavgationController.m */; };
+		47FCF8BF2085FB3A00FCC23A /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FCF8BD2085FB3A00FCC23A /* BViewController.m */; };
+		47FCF8C02085FB3A00FCC23A /* BViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47FCF8BE2085FB3A00FCC23A /* BViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		47FCF89E2085F97D00FCC23A /* UINavigationTransitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UINavigationTransitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FCF8A22085F97D00FCC23A /* UINavigationTransitionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UINavigationTransitionUITests.m; sourceTree = "<group>"; };
 		47FCF8A42085F97D00FCC23A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47FCF8B32085F9D100FCC23A /* Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animator.m; sourceTree = "<group>"; };
+		47FCF8B42085F9D100FCC23A /* Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
+		47FCF8B92085FA3500FCC23A /* HCNavgationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCNavgationController.h; sourceTree = "<group>"; };
+		47FCF8BA2085FA3500FCC23A /* HCNavgationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCNavgationController.m; sourceTree = "<group>"; };
+		47FCF8BC2085FB3A00FCC23A /* BViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		47FCF8BD2085FB3A00FCC23A /* BViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
+		47FCF8BE2085FB3A00FCC23A /* BViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +112,17 @@
 		47FCF87D2085F97C00FCC23A /* UINavigationTransition */ = {
 			isa = PBXGroup;
 			children = (
+				47FCF8B42085F9D100FCC23A /* Animator.h */,
+				47FCF8B32085F9D100FCC23A /* Animator.m */,
 				47FCF87E2085F97C00FCC23A /* AppDelegate.h */,
 				47FCF87F2085F97C00FCC23A /* AppDelegate.m */,
 				47FCF8812085F97C00FCC23A /* ViewController.h */,
 				47FCF8822085F97C00FCC23A /* ViewController.m */,
+				47FCF8BC2085FB3A00FCC23A /* BViewController.h */,
+				47FCF8BD2085FB3A00FCC23A /* BViewController.m */,
+				47FCF8BE2085FB3A00FCC23A /* BViewController.xib */,
+				47FCF8B92085FA3500FCC23A /* HCNavgationController.h */,
+				47FCF8BA2085FA3500FCC23A /* HCNavgationController.m */,
 				47FCF8842085F97C00FCC23A /* Main.storyboard */,
 				47FCF8872085F97C00FCC23A /* Assets.xcassets */,
 				47FCF8892085F97C00FCC23A /* LaunchScreen.storyboard */,
@@ -239,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47FCF88B2085F97C00FCC23A /* LaunchScreen.storyboard in Resources */,
+				47FCF8C02085FB3A00FCC23A /* BViewController.xib in Resources */,
 				47FCF8882085F97C00FCC23A /* Assets.xcassets in Resources */,
 				47FCF8862085F97C00FCC23A /* Main.storyboard in Resources */,
 			);
@@ -265,8 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47FCF8BF2085FB3A00FCC23A /* BViewController.m in Sources */,
+				47FCF8B52085F9D100FCC23A /* Animator.m in Sources */,
 				47FCF8832085F97C00FCC23A /* ViewController.m in Sources */,
 				47FCF88E2085F97C00FCC23A /* main.m in Sources */,
+				47FCF8BB2085FA3500FCC23A /* HCNavgationController.m in Sources */,
 				47FCF8802085F97C00FCC23A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "BViewController.h"
 @interface ViewController ()
 
 @end
@@ -16,13 +16,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    UIButton *btn = [UIButton buttonWithType:0];
+    btn.frame = CGRectMake(100, 200, 100, 50);
+    [btn setTitle:@"Push" forState:UIControlStateNormal];
+    btn.backgroundColor = [UIColor colorNamed:@"goodColor"];
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(pushToB) forControlEvents:UIControlEventTouchUpInside];
+    
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)pushToB:(UIButton *)sender {
+
+    [self.navigationController pushViewController:[BViewController new] animated:YES];
+
+}
+
+- (void)pushToB {
+    [self.navigationController pushViewController:[BViewController new] animated:YES];
 }
 
 
